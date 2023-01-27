@@ -247,10 +247,10 @@ class Item:
 	def __copy__(self):
 		return Item(self.name, self.imagefile, self.effect, self.size)
 		
-items = [Item("剣", "game_ken.png", [20], 25),\
-	Item("魔剣", "game_ken_maken.png", [0, 50], 25),\
-	Item("薬", "medical_kusuri_bin.png", [-20], 25),
-	Item("謎の薬", "medical_bannouyaku.png", [0, -50], 25)]
+items = [Item("剣", "png/game_ken.png", [20], 25),\
+	Item("魔剣", "png/game_ken_maken.png", [0, 50], 25),\
+	Item("薬", "png/medical_kusuri_bin.png", [-20], 25),
+	Item("謎の薬", "png/medical_bannouyaku.png", [0, -50], 25)]
 	
 class Console:
 	def __init__(self, pos, font):
