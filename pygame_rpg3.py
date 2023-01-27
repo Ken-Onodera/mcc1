@@ -457,20 +457,20 @@ class Spell(Item):
 		return Spell(self.name, self.imagefile, self.effect, self.turn)
 		
 items = [\
-	Item("竹刀","sports_kendou_shinai.png",[(20,0)]),\
-	Item("剣","game_ken.png",[(40,0)]),\
-	Item("聖剣","game_ken_seiken.png",[(60,0)]),\
-	Item("水","bousai_water.png",[(0,20)]),\
-	Item("栄養剤","drink_energy.png",[(0,40)]),\
-	Item("薬","medical_syrup_kusuri.png",[(0,60)]),\
-	Item("謎の剣","war_etsuou_kousenken.png",[None,(50,0)]),\
-	Item("謎の薬", "medical_bannouyaku.png", [None,(0,50)]),\
-	Item("魔剣", "game_ken_maken.png", [None, None,(100,0)]),\
-	Item("魔法の薬", "medical_kusuri_bin.png", [None,None,(0,100)]),\
-	Spell("忍術","ninja.png",[None,(1,2)],[2,3]),\
-	Spell("悪魔の呪い","character_akuma.png",[None,(-3,1)],[4]),\
-	Spell("くノ一の術","ninja_kunoichi.png",[None,(1,2),(-2,1)],[1,2]),\
-	Spell("魔女の呪い","fantasy_witch.png",[(1,-2),(-2,1)],[2]),\
+	Item("竹刀","png/sports_kendou_shinai.png",[(20,0)]),\
+	Item("剣","png/game_ken.png",[(40,0)]),\
+	Item("聖剣","png/game_ken_seiken.png",[(60,0)]),\
+	Item("水","png/bousai_water.png",[(0,20)]),\
+	Item("栄養剤","png/drink_energy.png",[(0,40)]),\
+	Item("薬","png/medical_syrup_kusuri.png",[(0,60)]),\
+	Item("謎の剣","png/war_etsuou_kousenken.png",[None,(50,0)]),\
+	Item("謎の薬", "png/medical_bannouyaku.png", [None,(0,50)]),\
+	Item("魔剣", "png/game_ken_maken.png", [None, None,(100,0)]),\
+	Item("魔法の薬", "png/medical_kusuri_bin.png", [None,None,(0,100)]),\
+	Spell("忍術","png/ninja.png",[None,(1,2)],[2,3]),\
+	Spell("悪魔の呪い","png/character_akuma.png",[None,(-3,1)],[4]),\
+	Spell("くノ一の術","png/ninja_kunoichi.png",[None,(1,2),(-2,1)],[1,2]),\
+	Spell("魔女の呪い","png/fantasy_witch.png",[(1,-2),(-2,1)],[2]),\
 	]
 	
 class Console:
@@ -490,14 +490,14 @@ class Console:
 			text = self.font.render(self.text, True, (0,0,0))
 			surface.blit(text, self.pos)
 
-ranger_man = Ranger(True, None, ["stand1_front05_man.png",\
-	"pose_genki03_man.png", "shinpai_man.png", "pose_makasenasai_boy.png",\
-	"pose_shock_man.png", "sick_kaoiro_man.png", "seikou_banzai_man.png",\
-	"sick_panic_man.png", "yaruki_moeru_man.png"])
+ranger_man = Ranger(True, None, ["png/stand1_front05_man.png",\
+	"png/pose_genki03_man.png", "png/shinpai_man.png", "png/pose_makasenasai_boy.png",\
+	"png/pose_shock_man.png", "png/sick_kaoiro_man.png", "png/seikou_banzai_man.png",\
+	"png/sick_panic_man.png", "png/yaruki_moeru_man.png"])
 ranger_woman = Ranger(False, None, ["stand1_front06_woman.png",\
-	"pose_genki04_woman.png", "shinpai_woman.png", "pose_makasenasai_girl.png",\
-	"pose_shock_woman.png", "sick_kaoiro_woman.png", "seikou_banzai_woman.png",\
-	"sick_panic_woman.png", "yaruki_moeru_woman.png"])
+	"png/pose_genki04_woman.png", "png/shinpai_woman.png", "png/pose_makasenasai_girl.png",\
+	"png/pose_shock_woman.png", "png/sick_kaoiro_woman.png", "png/seikou_banzai_woman.png",\
+	"png/sick_panic_woman.png", "png/yaruki_moeru_woman.png"])
 rangers = [ranger_woman.clone("ホワイト",100,(255,255,255),[1,6,13]),\
 	ranger_woman.clone("ピンク",100,(255,105,180),[1,5,7]),\
 	ranger_woman.clone("レッド",100,(255,0,0),[2,6,13]),\

@@ -71,13 +71,13 @@ class Ship:
 		self.size = 100
 		self.is_self = is_self
 		if is_self:
-			image = pygame.image.load("war_sentouki_man.png")
+			image = pygame.image.load("png/war_sentouki_man.png")
 			self.image = pygame.transform.scale(image, (self.size, self.size))
 		else:
-			image = pygame.image.load("war_sentouki_woman.png")
+			image = pygame.image.load("png/war_sentouki_woman.png")
 			image = pygame.transform.scale(image, (self.size, self.size))
 			self.image = pygame.transform.flip(image, True, False)
-		image = pygame.image.load("bakuhatsu.png")
+		image = pygame.image.load("png/bakuhatsu.png")
 		self.explosion_img = pygame.transform.scale(image, (self.size, self.size))
 		self.alive = True
 	def setpos(self, pos):

@@ -104,10 +104,10 @@ class Item:
 	def __copy__(self):
 		return Item(self.name, self.imagefile, self.effect, self.size)
 		
-items = [Item("剣", "game_ken.png", [20], 25),\
-	Item("魔剣", "game_ken_maken.png", [0, 50], 25),\
-	Item("薬", "medical_kusuri_bin.png", [-20], 25),
-	Item("謎の薬", "medical_bannouyaku.png", [0, -50], 25)]
+items = [Item("剣", "png/game_ken.png", [20], 25),\
+	Item("魔剣", "png/game_ken_maken.png", [0, 50], 25),\
+	Item("薬", "png/medical_kusuri_bin.png", [-20], 25),
+	Item("謎の薬", "png/medical_bannouyaku.png", [0, -50], 25)]
 	
 class Console:
 	def __init__(self, pos, font):
@@ -128,10 +128,10 @@ class Console:
 
 def main(playername):
 	sysfont = pygame.font.SysFont("Meiryo", 12)
-	players = [Player(playername, 100, ["stand1_front05_man.png", "pose_genki03_man.png", \
-		"shinpai_man.png", "yaruki_moeru_man.png", "pose_shock_man.png", "sick_kaoiro_man.png", "seikou_banzai_man.png"], 150, True), \
-		Player("コンピュータ", 100, ["stand1_front06_woman.png", "pose_genki04_woman.png", \
-		"shinpai_woman.png", "yaruki_moeru_woman.png", "pose_shock_woman.png", "sick_kaoiro_woman.png", "seikou_banzai_woman.png"], 150, False)]
+	players = [Player(playername, 100, ["png/stand1_front05_man.png", "png/pose_genki03_man.png", "png/shinpai_man.png",\
+		"png/yaruki_moeru_man.png", "png/pose_shock_man.png", "png/sick_kaoiro_man.png", "png/seikou_banzai_man.png"], 150, True), \
+		Player("コンピュータ", 100, ["png/stand1_front06_woman.png", "png/pose_genki04_woman.png", "png/shinpai_woman.png",\
+		"png/yaruki_moeru_woman.png", "png/pose_shock_woman.png", "png/sick_kaoiro_woman.png", "png/seikou_banzai_woman.png"], 150, False)]
 	x = 30
 	for player in players:
 		for item in items:
