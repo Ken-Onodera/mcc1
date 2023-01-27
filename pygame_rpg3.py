@@ -494,7 +494,7 @@ ranger_man = Ranger(True, None, ["png/stand1_front05_man.png",\
 	"png/pose_genki03_man.png", "png/shinpai_man.png", "png/pose_makasenasai_boy.png",\
 	"png/pose_shock_man.png", "png/sick_kaoiro_man.png", "png/seikou_banzai_man.png",\
 	"png/sick_panic_man.png", "png/yaruki_moeru_man.png"])
-ranger_woman = Ranger(False, None, ["stand1_front06_woman.png",\
+ranger_woman = Ranger(False, None, ["png/stand1_front06_woman.png",\
 	"png/pose_genki04_woman.png", "png/shinpai_woman.png", "png/pose_makasenasai_girl.png",\
 	"png/pose_shock_woman.png", "png/sick_kaoiro_woman.png", "png/seikou_banzai_woman.png",\
 	"png/sick_panic_woman.png", "png/yaruki_moeru_woman.png"])
